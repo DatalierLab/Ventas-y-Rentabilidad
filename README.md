@@ -28,13 +28,17 @@ El reporte responde estas preguntas:
 | Power BI Desktop | Modelo de relaciones, medidas DAX y visualización. |
 | DAX | Cálculo de indicadores que responden al contexto de filtros. |
 
-## Archivos principales
+## Archivos del proyecto
 
-| Archivo | Contenido |
+| Ubicación | Contenido |
 | --- | --- |
-| `README.md` | Descripción del proyecto, reglas de cálculo, medidas y validación. |
-| `Ventas_Rentabilidad.pbix` | Archivo de Power BI con el modelo y el reporte interactivo. |
-| `Ventas_Rentabilidad.pdf` | Exportación estática de la tabla de validación y del resumen de ventas. |
+| `README.md` | Objetivo, proceso de trabajo, modelo, medidas DAX, resultados y validación. |
+| `Ventas_Rentabilidad.pbix` | Modelo de datos y reporte interactivo de Power BI. |
+| `Ventas_Rentabilidad.pdf` | Exportación del reporte y de la tabla de validación. |
+| `sql/01_base_ventas.sql` | Exportación SQL de la estructura y los datos simulados de PostgreSQL. |
+| `sql/02_validacion.sql` | Consultas para comprobar los conteos y los indicadores mensuales. |
+
+El PDF permite revisar la presentación sin abrir Power BI. El archivo `.pbix` conserva el modelo, las medidas y la interacción del reporte. Los scripts SQL permiten reconstruir la base y contrastar los cálculos.
 
 El PDF permite revisar el resultado visual. La interacción con las segmentaciones y los cálculos del modelo se encuentra en el archivo `.pbix`.
 
@@ -325,6 +329,16 @@ En este proyecto trabajé la conexión entre PostgreSQL y Power BI, la preparaci
 En una siguiente versión incorporaría una tabla calendario, comparaciones contra el mes anterior y una página de detalle por producto. También separaría el análisis de pedidos pendientes y cancelados para estudiar su distribución sin mezclarlos con las ventas completadas.
 
 ---
+
+## Vista del dashboard
+
+<p align="center">
+  <img src="https://res.cloudinary.com/df8xwy4xb/image/upload/v1792372591/Venta_y_ren_pb_swrh6g.png" alt="PI5" width="1000">
+</p>
+
+El reporte permite explorar las ventas y el beneficio bruto por mes, categoría y ciudad. Las tarjetas y los gráficos responden a las selecciones; las conclusiones escritas resumen el semestre completo.
+
+[Ver el reporte en PDF](Ventas_Rentabilidad.pdf) · [Descargar el archivo de Power BI](Ventas_Rentabilidad.pbix)
 
 **Autora:** Daniela Araceli Gómez Flores  
 **Proyecto personal de portafolio | Ingeniería de Software**
