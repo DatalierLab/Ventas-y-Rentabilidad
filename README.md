@@ -1,4 +1,4 @@
-# Análisis de ventas y rentabilidad con PostgreSQL y Power BI
+# Análisis de ventas y rentabilidad
 
 Desarrollé este proyecto para analizar las ventas de un negocio simulado y comparar su desempeño por mes, producto, categoría y canal. Trabajé con PostgreSQL para almacenar y consultar los datos, y con Power BI para preparar la información, relacionar las tablas y construir el reporte interactivo.
 
